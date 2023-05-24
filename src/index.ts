@@ -44,6 +44,13 @@ const collectionDataUpdater = new CollectionDataUpdater(
       config.PUBLIC_ASSETS_PATH,
       config.ASSETS_EXTENSION,
     ),
+    new S3BasicFileDataUpdater(
+      "Model",
+      s3Config,
+      config.PRIVATE_MODELS_PATH,
+      config.PUBLIC_MODELS_PATH,
+      config.MODELS_EXTENSION,
+    ),
     new S3BasicNftMetadataDataUpdater(
       "Metadata",
       s3Config,
