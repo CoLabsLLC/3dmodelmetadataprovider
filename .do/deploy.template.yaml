@@ -26,6 +26,16 @@ spec:
         - key: ASSETS_EXTENSION
           scope: RUN_TIME
           value: .png
+          
+        - key: PRIVATE_MODELS_PATH
+          scope: RUN_TIME
+          value: /private/models
+        - key: PUBLIC_MODELS_PATH
+          scope: RUN_TIME
+          value: /public/models
+        - key: MODELS_EXTENSION
+          scope: RUN_TIME
+          value: .glb
 
         - key: PRIVATE_METADATA_PATH
           scope: RUN_TIME
